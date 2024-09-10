@@ -1,8 +1,3 @@
-"""
-Core module of the sample project
-"""
+def main():
 
-
-def script_main():
-
-    print("Script successfully executed")
+    print("main function from .core successfully executed")

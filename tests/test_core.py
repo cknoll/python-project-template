@@ -1,13 +1,16 @@
 import unittest
-from ipydex import IPS, activate_ips_on_exception
 
-activate_ips_on_exception()
+# uesful for debugging
+# from ipydex import IPS, activate_ips_on_exception
+# activate_ips_on_exception()
+# see also https://github.com/cknoll/ipydex?tab=readme-ov-file#ipydex-usage-in-unittests-using-pytest
 
-# noinspection PyPep8Naming
+
 class TestCore(unittest.TestCase):
     def setUp(self):
+        # put generic setup code here
         pass
 
-    # mark tests which only work for the "old core"
-    def test_core1(self):
+    # recommendation number your tests to achieve predictable ordering
+    def test_010_core(self):
         pass
