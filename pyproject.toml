@@ -29,7 +29,7 @@ classifiers=[
 Homepage = "..."
 
 [project.scripts]
-package_name = "package_name.script:main"
+package_name = "package_name.cli:main"
 
 [tool.setuptools.packages.find]
 # note: `include-package-data = true` by default in pyproject.toml

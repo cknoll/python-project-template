@@ -14,12 +14,12 @@ def main():
 
     # docs: https://docs.python.org/3/library/argparse.html
     parser = argparse.ArgumentParser()
-    parser.add_argument("cmd", help=f"main command", default=None)
+    parser.add_argument("cmd", help=f"main command")
 
     args = parser.parse_args()
 
     if args.cmd:
-        print("command: ", cmd)
+        print("command: ", args.cmd)
         core.main()
     else:
         print("nothing to do, see option `--help` for more info")
