@@ -1,6 +1,6 @@
 import unittest
 
-# uesful for debugging
+# useful for debugging
 # from ipydex import IPS, activate_ips_on_exception
 # activate_ips_on_exception()
 # see also https://github.com/cknoll/ipydex?tab=readme-ov-file#ipydex-usage-in-unittests-using-pytest
@@ -11,6 +11,6 @@ class TestCore(unittest.TestCase):
         # put generic setup code here
         pass
 
-    # recommendation number your tests to achieve predictable ordering
+    # recommendation: number your tests to achieve predictable ordering
     def test_010_core(self):
         pass
