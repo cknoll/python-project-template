@@ -1,5 +1,5 @@
 """
-Command line interface for package_name
+Command line interface
 """
 
 import argparse
