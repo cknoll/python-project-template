@@ -5,6 +5,9 @@ import unittest
 # activate_ips_on_exception()
 # see also https://github.com/cknoll/ipydex?tab=readme-ov-file#ipydex-usage-in-unittests-using-pytest
 
+# the following requires the package to be properly installed in your environment
+# import package_name
+
 
 class TestCore(unittest.TestCase):
     def setUp(self):

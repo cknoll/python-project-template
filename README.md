@@ -21,6 +21,12 @@ This repository holds the basic directory layout for new python projects. Additi
 For local development it is recommended to install this (better: your) package in [editable mode](https://pip.pypa.io/en/latest/cli/pip_wheel/?highlight=editable#cmdoption-e): `pip install -e .` (run from where `pyproject.toml` lives).
 
 
+## Testing
+
+Run `pytest` in the root directory of the package (where `pyproject.toml` lives).
+Use `pytest -s` to disable input and output suppression (i.e. see the output of your code)
+Use `pytest -k _01` to execute only testcases containing the substring "_01".
+
 ## Publishing on pypi
 
 To publish your package on [Python Package Index (pypi)](pypi.org/) the following commands should work:
