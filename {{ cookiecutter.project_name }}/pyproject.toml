@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 [project]
 
 
-name = "package_name"
+name = "{{ cookiecutter.project_name }}"
 description = "..."
 authors=[{name = "Foo Bar", email = "firstname.lastname@domain.org"}]
 readme = "README.md"
@@ -29,7 +29,7 @@ classifiers=[
 # Homepage = "..."
 
 [project.scripts]
-package_name = "package_name.cli:main"
+{{ cookiecutter.project_name }} = "{{ cookiecutter.project_name }}.cli:main"
 
 [tool.setuptools.packages.find]
 # note: `include-package-data = true` by default in pyproject.toml
@@ -42,4 +42,4 @@ testpaths = [ "tests"]
 # see https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#attr
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
-version = {attr = "package_name.__version__"}
+version = {attr = "{{ cookiecutter.project_name }}.__version__"}

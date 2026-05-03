@@ -6,14 +6,14 @@
 This repository holds the basic directory layout for new python projects. Additional to a reasonable minimum of features (setup.py, requirements.txt, directory structure, ...) it contains the following extras:
 
 - basic unittest
-- `script.py` and associated entrypoint in `pyproject.toml` (allows to call some functionality of the package directly from command line (try `package_name cmd1`))
+- `script.py` and associated entrypoint in `pyproject.toml` (allows to call some functionality of the package directly from command line (try `{{ cookiecutter.project_name }} cmd1`))
 
 
 ## Usage
 
-- Rename directory `src/package_name`
+- Rename directory `src/{{ cookiecutter.project_name }}`
 - Edit `pyproject.toml`: replace dummy data with real data.
-- Add your source. a) Either to [`core.py`](src/package_name/core.py) or b) to your own separate file(s).
+- Add your source. a) Either to [`core.py`](src/{{ cookiecutter.project_name }}/core.py) or b) to your own separate file(s).
     - a) simplifies importing your module
     - b) is more flexible but you have to take care of importability yourself.
 

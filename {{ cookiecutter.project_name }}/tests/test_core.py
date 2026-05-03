@@ -6,7 +6,7 @@ import unittest
 # see also https://github.com/cknoll/ipydex?tab=readme-ov-file#ipydex-usage-in-unittests-using-pytest
 
 # the following requires the package to be properly installed in your environment
-# import package_name
+# import {{ cookiecutter.project_name }}
 
 
 class TestCore(unittest.TestCase):
